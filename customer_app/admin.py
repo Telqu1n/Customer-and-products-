@@ -6,7 +6,7 @@ from .models import Customer, Product
 class CustomerAdmin(admin.ModelAdmin):
     list_display =('full_name', 'email', 'phone')
     list_filter = ('last_name', 'email', 'phone')
-    
+    search_fields = ('last_name', 'email', 'phone')
     
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'price')
