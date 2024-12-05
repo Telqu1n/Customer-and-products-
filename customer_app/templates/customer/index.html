@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+</head>
+<body>
+
+  <h1>
+    Welcome to the products page.
+  </h1>
+
+  <h2>
+    Here are the products in our store:
+  </h2>
+
+  <ul>
+    {% for products in products%}
+
+      <li>
+        {{products.name}} - £{{products.price}}
+      </li>
+    {% endfor %}
+  </ul>
+  
+  <p>
+    sorry for the inflation >w<
+  </p>
+
+</body>
+</html>
